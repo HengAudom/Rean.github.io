@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>ទីតាំង</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../img/Icon/RPITSSR.ico" type="image/x-icon">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <img src="../img/Photo.png" alt="logo" class="logo">
+      <!-- <span class="logo_name">TBEITBC</span> -->
+      <div class="wrapper">
+        <svg class="logo_name">
+          <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+            TVET
+          </text>
+        </svg>
+      </div>
+    </div>
+
+    <ul class="nav-links">
+      <li>
+        <a href="../index.html">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">ទំព័រដើម</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="../index.html">ទំព័រដើម</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">វគ្គបណ្តុះបណ្តាល</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a href="Technology.html">បរិញ្ញាបត្របច្ចេកវិទ្យា</a></li>
+          <li><a href="Technical.html">សញ្ញាបត្រជាន់ខ្ពស់បច្ចេកទេស</a></li>
+          <li><a href="Professional.html">វិញ្ញាបនបត្រវិជ្ជាជីវៈ១ឆ្នាំ</a></li>
+          <li><a href="Certificate.html">វិញ្ញាបនបត្ររយៈពេលខ្លី</a></li>
+        </ul>
+      </li>
+      
+      <li>
+        <a href="Institute.html">
+          <i class='bx bxs-book-content'></i>
+          <span class="link_name">អំពីវិទ្យាស្ថាន</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="Institute.html">អំពីវិទ្យាស្ថាន</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a  href="Clocation.html">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">ទីតាំង</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="Clocation.html">ទីតាំង</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+        <i class='bx bx-menu' ></i>
+        <span class="text">TVET</span>
+      </div>
+      
+  </section>
+
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+</body>
+</html>
